@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-decribe 'answers' do
+describe 'answers' do
 	
 	
 
