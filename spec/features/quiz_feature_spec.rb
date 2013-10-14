@@ -1,8 +1,7 @@
 require 'spec_helper'
+require_relative 'helpers/quiz_features_helper'
 
-def create_quiz(some_title)
-  quiz = Quiz.create({ :title => some_title })
-end
+include Features::QuizHelpers
 
 describe 'the quizzes section' do
   

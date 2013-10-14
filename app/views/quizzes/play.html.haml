@@ -1,5 +1,8 @@
 %h1= @quiz.title
-
-%ul
+= form_for @quiz do |f|
   - @quiz.questions.each do |question|
-    %li= question.text
+    = fields_for question do |question_f|
+      = fields_for :answers do |answer_f|
+        = answer_f.label :response, "#{question.text}"
+        = answer_f.select :response, options_for_select(%w(true false))
+  = f.submit('Submit answers')
