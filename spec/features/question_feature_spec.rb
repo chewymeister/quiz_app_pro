@@ -4,30 +4,18 @@ describe 'questions' do
 
 	before(:all) do
 
-
 	end
 
-	
+	describe "answering a question" do
 
-	describe "answering a question" do 
-		it 'should display the questions' do
-			
-		end
+		it 'should display the questions'
 
-		it 'should allow a user to answer a question with true/false' do
-
-
-		end
+		it 'should allow a user to answer a question with true/false'
 		
-		it 'a signed in user can add a question' do
+		it 'a signed in user can add a question'
 
+		it 'a user who is not signed in cannot add a question'
 
-
-		end
-
-		it 'a user who is not signed in cannot add a question' do
-
-		end
 	end
 
 end

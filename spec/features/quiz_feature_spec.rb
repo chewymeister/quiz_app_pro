@@ -78,5 +78,4 @@ describe 'the quizzes section' do
 
   end
 
-
 end
