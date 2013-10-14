@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
 			session[:user_id] = user.id
 			redirect_to root_path, :notice => "Welcome back #{user.first_name}!"
 		else
-			flash[:errors] = ["The email or password you typed did not work"]
+			flash.now[:errors] = ["The email or password you typed did not work"]
 			render 'new'
 		end
 	end

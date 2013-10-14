@@ -2,7 +2,8 @@
   <%= f.text_field :first_name, placeholder: 'First name' %>
   <%= f.text_field :last_name, placeholder: 'Last name' %>
   <%= f.text_field :email, placeholder: 'Email' %>
-  <%= f.text_field :password, placeholder: 'Password' %>
-  <%= f.text_field :password_confirmation, placeholder: 'Password confirmation' %>
+  <%= f.text_field :password, placeholder: 'Password', type: 'password' %>
+  <%= f.text_field :password_confirmation, placeholder: 'Password confirmation',
+                                           type: 'password' %>
   <%= f.submit('Sign up') %>
 <% end %>
