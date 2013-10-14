@@ -1,0 +1,5 @@
+%h1= @quiz.title
+
+%ul
+  - @quiz.questions.each do |question|
+    %li= question.text

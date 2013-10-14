@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title Quiz App Pro
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    - if flash[:notice]
+      .notice= flash[:notice]
+    - if flash[:errors] and not flash[:errors].empty?
+      #errors
+        Please try again:
+        %ul
+          - flash[:errors].each do |error|
+            %li= error
+    = yield

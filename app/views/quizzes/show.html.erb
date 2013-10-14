@@ -1,9 +1,0 @@
-<h1><%= @quiz.title %></h1>
-
-<ul>
-<% @quiz.questions.each do |question| %>
-	<li><%= question.text %> : <%= question.truth %></li>
-<% end %>
-</ul>
-
-<%= link_to 'Play', [:play, @quiz] %>
